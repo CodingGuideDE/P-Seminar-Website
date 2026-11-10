@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LokalKI – Die KI-Box für Praxen und Kanzleien</title>
+  <meta name="description" content="LokalKI ist der KI-Assistent, der in Ihrer Praxis oder Kanzlei steht. Ihre Daten verlassen nie das Haus – Festpreis, Einrichtung und Service inklusive.">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ============ Navigation ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="logo" aria-label="LokalKI – zur Startseite">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="7" width="26" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <line x1="8" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="8" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle class="logo__led" cx="23" cy="18" r="2.4"/>
+      </svg>
+      <span>LokalKI</span>
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
+      <a href="#loesung">Lösung</a>
+      <a href="#anwendungen">Anwendungen</a>
+      <a href="#preise">Preise</a>
+      <a href="#sicherheit">Sicherheit</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt" class="btn btn--primary btn--sm nav__cta">Demo anfragen</a>
+    </nav>
+
+    <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. Hero ============ -->
+<section class="hero" id="top">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow" data-reveal>KI für Arztpraxen, Kanzleien und Steuerberater</p>
+      <h1 data-reveal>
+        <span class="hero__pre">Nicht die billigste KI.</span>
+        Sondern die einfachste rechtssichere KI&nbsp;– zum Festpreis.
+      </h1>
+      <p class="lead" data-reveal>
+        Die LokalKI-Box steht in Ihrer Praxis oder Kanzlei und arbeitet rund um die Uhr Ihre sensiblen Routineaufgaben ab. Für schwierige Fragen holt sie sich anonymisiert Hilfe aus einer deutschen Cloud.
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a href="#kontakt" class="btn btn--primary">Demo anfragen</a>
+        <a href="#ablauf" class="btn btn--ghost">So funktioniert’s
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <ul class="hero__chips" data-reveal>
+        <li><span class="dot"></span>Daten bleiben im Haus</li>
+        <li><span class="dot"></span>Funktioniert offline</li>
+        <li><span class="dot"></span>Ab 249&nbsp;€ / Monat</li>
+      </ul>
+    </div>
+
+    <!-- Hero-Grafik: Box im Haus, Dokumente fließen hinein -->
+    <figure class="hero__visual" data-reveal="scale" aria-label="Schema: Dokumente aus Ihrer Praxis werden von der LokalKI-Box im Haus verarbeitet. Nur anonymisierte Anfragen gehen optional an eine deutsche Cloud.">
+      <svg viewBox="0 0 560 460" class="hero-svg" role="img" aria-hidden="true">
+        <!-- Gebäude-Grenze -->
+        <rect class="hs-boundary" x="16" y="36" width="392" height="400" rx="26"/>
+        <rect class="hs-label-bg" x="40" y="24" width="168" height="24" rx="12"/>
+        <text class="hs-label" x="124" y="40" text-anchor="middle">Ihre Praxis · Kanzlei</text>
+
+        <!-- Eingänge -->
+        <g class="hs-input" transform="translate(44 88)">
+          <rect width="104" height="58" rx="12"/>
+          <path class="hs-ico" d="M16 20h22v16H16zM16 20l11 9 11-9"/>
+          <text x="48" y="33">E-Mails</text>
+        </g>
+        <g class="hs-input" transform="translate(44 196)">
+          <rect width="104" height="58" rx="12"/>
+          <path class="hs-ico" d="M18 17h14l6 6v18H18zM23 29h10M23 34h8"/>
+          <text x="48" y="33">Befunde</text>
+        </g>
+        <g class="hs-input" transform="translate(44 304)">
+          <rect width="104" height="58" rx="12"/>
+          <path class="hs-ico" d="M27 16a5 5 0 0 1 5 5v8a5 5 0 0 1-10 0v-8a5 5 0 0 1 5-5zM19 29a8 8 0 0 0 16 0M27 37v5"/>
+          <text x="48" y="33">Diktate</text>
+        </g>
+
+        <!-- Leitungen zur Box -->
+        <path id="p1" class="hs-wire" d="M148 117 C 190 117, 190 200, 222 210"/>
+        <path id="p2" class="hs-wire" d="M148 225 L 222 225"/>
+        <path id="p3" class="hs-wire" d="M148 333 C 190 333, 190 250, 222 240"/>
+
+        <!-- Animierte Dokumente -->
+        <g class="hs-doc"><rect x="-7" y="-9" width="14" height="18" rx="2.5"/>
+          <animateMotion dur="3.2s" repeatCount="indefinite" rotate="0"><mpath href="#p1"/></animateMotion></g>
+        <g class="hs-doc"><rect x="-7" y="-9" width="14" height="18" rx="2.5"/>
+          <animateMotion dur="3.2s" begin="1.1s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></g>
+        <g class="hs-doc"><rect x="-7" y="-9" width="14" height="18" rx="2.5"/>
+          <animateMotion dur="3.2s" begin="2.1s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></g>
+
+        <!-- Die Box -->
+        <g class="hs-box">
+          <rect class="hs-box__shadow" x="228" y="268" width="152" height="10" rx="5"/>
+          <rect class="hs-box__body" x="222" y="178" width="164" height="94" rx="16"/>
+          <line class="hs-box__vent" x1="242" y1="204" x2="300" y2="204"/>
+          <line class="hs-box__vent" x1="242" y1="216" x2="286" y2="216"/>
+          <line class="hs-box__vent" x1="242" y1="228" x2="294" y2="228"/>
+          <text class="hs-box__name" x="242" y="256">LokalKI</text>
+          <circle class="hs-led" cx="362" cy="250" r="5"/>
+          <circle class="hs-led-ring" cx="362" cy="250" r="5"/>
+        </g>
+
+        <!-- Ausgabe: Briefing -->
+        <path class="hs-wire hs-wire--out" d="M304 272 L 304 330"/>
+        <g class="hs-output" transform="translate(222 330)">
+          <rect width="164" height="74" rx="12"/>
+          <text class="hs-out-title" x="16" y="26">Morgen-Briefing</text>
+          <rect class="hs-line" x="16" y="38" width="112" height="6" rx="3"/>
+          <rect class="hs-line" x="16" y="52" width="84" height="6" rx="3"/>
+          <circle class="hs-check" cx="144" cy="22" r="8"/>
+          <path class="hs-check-mark" d="M140 22l3 3 5-6"/>
+        </g>
+
+        <!-- Hybrid: anonymisiert in die Cloud -->
+        <path class="hs-wire hs-wire--cloud" d="M386 196 C 430 170, 450 150, 470 132"/>
+        <g class="hs-anon" transform="translate(360 150)">
+          <rect width="96" height="26" rx="13"/>
+          <text x="48" y="17" text-anchor="middle">anonymisiert</text>
+        </g>
+        <g class="hs-cloud" transform="translate(452 70)">
+          <path d="M22 62h58a20 20 0 0 0 2-40 28 28 0 0 0-53-6A22 22 0 0 0 22 62z"/>
+          <text x="52" y="86" text-anchor="middle">Deutsche Cloud</text>
+          <text class="hs-cloud-sub" x="52" y="102" text-anchor="middle">optional</text>
+        </g>
+      </svg>
+    </figure>
+  </div>
+
+  <!-- Faktenleiste -->
+  <div class="container">
+    <dl class="facts" data-reveal-group>
+      <div class="facts__item" data-reveal><dt>24/7</dt><dd>arbeitet im Hintergrund, auch nachts</dd></div>
+      <div class="facts__item" data-reveal><dt>~90&nbsp;%</dt><dd>der Büroarbeit erledigt die Box ganz ohne Cloud</dd></div>
+      <div class="facts__item" data-reveal><dt>100&nbsp;%</dt><dd>offline-fähig, auch ohne Internet</dd></div>
+      <div class="facts__item" data-reveal><dt>1</dt><dd>fester Ansprechpartner für Einrichtung und Support</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 2. Problem ============ -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>Das Problem</p>
+      <h2 data-reveal>Sie wollen KI nutzen. Aber Ihre Daten dürfen nicht raus.</h2>
+      <p class="lead" data-reveal>KI könnte Ihnen jeden Tag Stunden an Schreib- und Sortierarbeit abnehmen. Doch Patienten- und Mandantendaten gehören nicht einfach in ChatGPT &amp; Co.</p>
+    </div>
+
+    <div class="cards cards--3" data-reveal-group>
+      <article class="card card--problem" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 6 8v7c0 6.5 4.2 11.3 10 13 5.8-1.7 10-6.5 10-13V8z"/><path d="M12.5 16.5 15 19l4.5-5"/></svg>
+        </div>
+        <h3>Schweigepflicht &amp; DSGVO</h3>
+        <p>Ärztinnen, Therapeuten, Anwälte und Steuerberater unterliegen § 203 StGB. Gesundheitsdaten sind nach DSGVO besonders geschützt. Cloud-KI ist zwar unter Auflagen möglich – aber mit Verträgen, Prüfungen und Restrisiko.</p>
+      </article>
+      <article class="card card--problem" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="12" r="5"/><path d="M7 27c1.5-5 5-7.5 9-7.5s7.5 2.5 9 7.5"/><path d="M4 4l24 24"/></svg>
+        </div>
+        <h3>Schatten-KI im Team</h3>
+        <p>Weil es so bequem ist, kopieren Mitarbeitende heimlich Texte in private KI-Konten. Niemand weiß, welche Daten wo gelandet sind – das größte Risiko ist oft das unsichtbare.</p>
+      </article>
+      <article class="card card--problem" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="15" rx="2.5"/><path d="M11 27h10M16 22v5"/><path d="M13 12.5a3 3 0 1 1 4 2.8c-.7.3-1 .8-1 1.5"/><circle cx="16" cy="19" r=".6"/></svg>
+        </div>
+        <h3>Keine IT-Abteilung</h3>
+        <p>Welches Modell? Welcher Server? Welcher Vertrag? Praxen und Kanzleien haben weder Zeit noch Personal, sich in KI-Infrastruktur einzuarbeiten. Sie brauchen etwas, das einfach funktioniert.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. Lösung ============ -->
+<section class="section section--alt" id="loesung">
+  <div class="container split">
+    <div class="split__copy">
+      <p class="eyebrow" data-reveal>Die Lösung</p>
+      <h2 data-reveal>Ihr KI-Assistent, der im Haus bleibt.</h2>
+      <p class="lead" data-reveal>Ein KI-Gerät in Ihren Räumen – plus Rundum-Service im Abo. Die Box arbeitet als digitaler Assistent im Hintergrund, verbunden mit den Programmen, die Sie ohnehin nutzen.</p>
+      <ul class="checklist" data-reveal-group>
+        <li data-reveal><strong>Daten verlassen nie das Haus.</strong> Keine Vertragskette mit Cloud-Anbietern, keine Diskussion über Zugriffe aus dem Ausland.</li>
+        <li data-reveal><strong>Funktioniert offline.</strong> Auch wenn das Internet ausfällt, läuft die Box weiter.</li>
+        <li data-reveal><strong>Festpreis statt Abrechnung pro Anfrage.</strong> Unbegrenzte Nutzung, keine Preissprünge.</li>
+        <li data-reveal><strong>Fertiges System.</strong> Oberfläche, Dokumentensuche, Einrichtung und ein fester Ansprechpartner.</li>
+      </ul>
+    </div>
+
+    <!-- Anbindungs-Grafik -->
+    <figure class="split__visual hub" data-reveal="scale" aria-label="Die LokalKI-Box ist mit E-Mail, Praxissoftware, KIM, DATEV, Diktaten und Aktenarchiv verbunden.">
+      <svg viewBox="0 0 440 440" class="hub-svg" aria-hidden="true">
+        <circle class="hub-ring" cx="220" cy="220" r="160"/>
+        <circle class="hub-ring hub-ring--inner" cx="220" cy="220" r="96"/>
+        <g class="hub-spokes">
+          <line x1="220" y1="220" x2="220" y2="60"/>
+          <line x1="220" y1="220" x2="358.6" y2="140"/>
+          <line x1="220" y1="220" x2="358.6" y2="300"/>
+          <line x1="220" y1="220" x2="220" y2="380"/>
+          <line x1="220" y1="220" x2="81.4" y2="300"/>
+          <line x1="220" y1="220" x2="81.4" y2="140"/>
+        </g>
+        <g class="hub-center">
+          <rect x="166" y="186" width="108" height="68" rx="14"/>
+          <line x1="182" y1="206" x2="220" y2="206"/>
+          <line x1="182" y1="216" x2="208" y2="216"/>
+          <text x="182" y="240">LokalKI</text>
+          <circle class="hs-led" cx="256" cy="236" r="4"/>
+        </g>
+        <g class="hub-node" style="--i:0" transform="translate(220 60)"><circle r="34"/><text y="4">E-Mail</text></g>
+        <g class="hub-node" style="--i:1" transform="translate(358.6 140)"><circle r="34"/><text y="-3">Praxis-</text><text y="11">software</text></g>
+        <g class="hub-node" style="--i:2" transform="translate(358.6 300)"><circle r="34"/><text y="4">KIM</text></g>
+        <g class="hub-node" style="--i:3" transform="translate(220 380)"><circle r="34"/><text y="4">DATEV</text></g>
+        <g class="hub-node" style="--i:4" transform="translate(81.4 300)"><circle r="34"/><text y="4">Diktate</text></g>
+        <g class="hub-node" style="--i:5" transform="translate(81.4 140)"><circle r="34"/><text y="-3">Akten-</text><text y="11">archiv</text></g>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 4. Ablauf ============ -->
+<section class="section" id="ablauf">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <p class="eyebrow" data-reveal>So funktioniert’s</p>
+      <h2 data-reveal>In drei Schritten zur eigenen KI.</h2>
+    </div>
+
+    <ol class="steps" data-progress>
+      <li class="steps__line" aria-hidden="true"><span></span></li>
+      <li class="step" data-reveal>
+        <span class="step__num">1</span>
+        <h3>Beratung</h3>
+        <p>Wir sehen uns Ihre Abläufe an: Welche Aufgaben kosten Zeit? Welche Programme nutzen Sie? Danach empfehlen wir das passende Paket.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">2</span>
+        <h3>Installation vor Ort</h3>
+        <p>Wir bringen die Box, schließen sie an und verbinden sie mit E-Mail, Praxissoftware, KIM oder DATEV. Ihr Team bekommt eine kurze Einweisung.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">3</span>
+        <h3>Die Box arbeitet 24/7</h3>
+        <p>Ab dem ersten Tag sortiert, fasst zusammen und entwirft die Box im Hintergrund. Updates und Wartung übernehmen wir aus der Ferne.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 5. Anwendungsfälle ============ -->
+<section class="section section--alt" id="anwendungen">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>Anwendungsfälle</p>
+      <h2 data-reveal>Während Sie schlafen, erledigt die Box die Vorarbeit.</h2>
+      <p class="lead" data-reveal>Ein Beispiel aus einer Hausarztpraxis: Über Nacht wird aus dem Posteingang ein klares Briefing für den nächsten Morgen.</p>
+    </div>
+
+    <div class="night">
+      <!-- Zeitleiste -->
+      <ol class="timeline" data-progress>
+        <li class="timeline__track" aria-hidden="true"><span></span></li>
+        <li class="timeline__item" data-reveal>
+          <time>18:30</time>
+          <div><h3>Praxis schließt</h3><p>Die Box übernimmt den Posteingang.</p></div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <time>19:00</time>
+          <div><h3>Posteingang sortieren</h3><p>E-Mails, Arztbriefe und Faxe werden zusammengefasst und verschlagwortet.</p></div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <time>22:00</time>
+          <div><h3>Diktate umwandeln</h3><p>Die Diktate des Tages werden lokal in Text umgewandelt.</p></div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <time>01:00</time>
+          <div><h3>Befunde zuordnen</h3><p>Neue Befunde und Laborwerte werden den Terminen zugeordnet und nach Dringlichkeit sortiert.</p></div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <time>04:00</time>
+          <div><h3>Antworten entwerfen</h3><p>Für E-Mails und Rückrufbitten liegen Entwürfe bereit – Sie prüfen und senden.</p></div>
+        </li>
+        <li class="timeline__item timeline__item--done" data-reveal>
+          <time>06:00</time>
+          <div><h3>Briefing ist fertig</h3><p>Bevor die erste Patientin kommt, wissen Sie, was heute wichtig ist.</p></div>
+        </li>
+      </ol>
+
+      <!-- Briefing-Mockup -->
+      <div class="briefing-wrap">
+        <article class="briefing" data-reveal="briefing" aria-label="Beispiel: Morgen-Briefing">
+          <header class="briefing__head">
+            <div>
+              <p class="briefing__kicker">Morgen-Briefing · 06:00 Uhr</p>
+              <h3>Guten Morgen, Frau Dr. Weber</h3>
+            </div>
+            <span class="briefing__badge"><span class="dot"></span>lokal erstellt</span>
+          </header>
+
+          <ul class="briefing__list">
+            <li style="--i:0">
+              <span class="tag tag--neutral">Heute</span>
+              <p><strong>23 Termine</strong>, davon 3 mit neuen Befunden. Kurzzusammenfassung je Patient liegt bereit.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Terminplan</a>
+            </li>
+            <li style="--i:1">
+              <span class="tag tag--urgent">Dringend</span>
+              <p><strong>Laborwerte Hr. K.</strong> (Termin 08:30): Werte außerhalb des Referenzbereichs – bitte vorab ansehen.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Labor_0911.pdf</a>
+            </li>
+            <li style="--i:2">
+              <span class="tag tag--neutral">Post</span>
+              <p><strong>Entlassbrief Klinikum</strong> für Fr. S. eingegangen, Zusammenfassung erstellt.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Arztbrief_Klinikum.pdf</a>
+            </li>
+            <li style="--i:3">
+              <span class="tag tag--neutral">Rückrufe</span>
+              <p><strong>4 Rückrufbitten</strong>, davon 2 Rezeptanfragen.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Telefonnotizen</a>
+            </li>
+            <li style="--i:4">
+              <span class="tag tag--neutral">E-Mail</span>
+              <p><strong>12 neue Nachrichten</strong>, 5 Antwortentwürfe bereit zur Prüfung.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Posteingang</a>
+            </li>
+            <li style="--i:5">
+              <span class="tag tag--neutral">Offen</span>
+              <p>Überweisung Hr. M. unterschreiben.</p>
+              <a class="src" href="#anwendungen" tabindex="-1">Aufgaben</a>
+            </li>
+          </ul>
+          <footer class="briefing__foot">Jeder Punkt verweist auf das Originaldokument – nachprüfbar mit einem Klick.</footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- Use-Case-Raster -->
+    <h3 class="subhead" data-reveal>Was die Box außerdem für Sie übernimmt</h3>
+    <div class="usecases" data-reveal-group>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="18" rx="3"/><path d="m4 10 12 8 12-8"/></svg>
+        <h4>Posteingang über Nacht</h4>
+        <p>E-Mails, Arztbriefe und Mandantenpost sortiert, zusammengefasst und verschlagwortet.</p>
+      </article>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26l1.5-6L21 6.5a2.1 2.1 0 0 1 3 0l1.5 1.5a2.1 2.1 0 0 1 0 3L12 24.5z"/><path d="M18.5 9l4.5 4.5"/></svg>
+        <h4>Briefe &amp; E-Mails entwerfen</h4>
+        <p>Antworten, Anschreiben und Stellungnahmen als Entwurf – Sie prüfen und unterschreiben.</p>
+      </article>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4h11l5 5v19H8z"/><path d="M19 4v5h5M12 15h8M12 19h8M12 23h5"/></svg>
+        <h4>Akten zusammenfassen</h4>
+        <p>Lange Akten und Befunde auf das Wesentliche gebracht – mit Verweis auf jede Fundstelle.</p>
+      </article>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4h16v24l-3-2-2.5 2-2.5-2-2.5 2-2.5-2L8 28z"/><path d="M12 11h8M12 15h8M12 19h5"/></svg>
+        <h4>Belege vorsortieren</h4>
+        <p>Für Steuerkanzleien: Belege und Rechnungen erkennen, zuordnen und vorsortieren.</p>
+      </article>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="12" y="4" width="8" height="15" rx="4"/><path d="M7 15a9 9 0 0 0 18 0M16 24v4M12 28h8"/></svg>
+        <h4>Diktate in Text</h4>
+        <p>Spracherkennung direkt auf der Box – kein Audio verlässt die Praxis.</p>
+      </article>
+      <article class="usecase" data-reveal>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8"/><path d="m20 20 7 7"/></svg>
+        <h4>Archiv durchsuchen</h4>
+        <p>Fragen Sie Ihre alten Bestände in normaler Sprache: „Welche Mandanten hatten 2023 eine Betriebsprüfung?“</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5b. Hybrid / Anonymisierung ============ -->
+<section class="section" id="hybrid">
+  <div class="container split split--reverse">
+    <div class="split__copy">
+      <p class="eyebrow" data-reveal>Hybrid-Option</p>
+      <h2 data-reveal>Für schwierige Fragen: erst anonymisieren, dann fragen.</h2>
+      <p class="lead" data-reveal>Für rund 90&nbsp;% der Büroarbeit reicht die Box allein. Wird es knifflig, entfernt sie zuerst alle persönlichen Daten. Erst dann geht die Frage an ein starkes Modell in einer deutschen Cloud – und die Antwort kommt zurück in Ihr Haus.</p>
+      <p class="note" data-reveal>Die Hybrid-Option ist in den Paketen Komplett und Pro enthalten und lässt sich jederzeit abschalten.</p>
+    </div>
+
+    <div class="split__visual" data-reveal="scale">
+      <div class="anon" id="anon">
+        <div class="anon__bar">
+          <span class="anon__step is-active" data-step="0">1 · Original</span>
+          <span class="anon__step" data-step="1">2 · Anonymisiert</span>
+          <span class="anon__step" data-step="2">3 · An Cloud</span>
+        </div>
+        <p class="anon__text">
+          Mandant <span class="pii" data-tag="[Person A]">Thomas Berger</span>, wohnhaft
+          <span class="pii" data-tag="[Adresse]">Ludwigstraße 14, Passau</span>, Steuer-ID
+          <span class="pii" data-tag="[ID]">12 345 678 901</span>, hat gegen den Bescheid vom
+          <span class="pii" data-tag="[Datum]">14.08.2026</span> fristgerecht Einspruch eingelegt. Bitte formuliere eine Begründung zur Abzugsfähigkeit des häuslichen Arbeitszimmers.
+        </p>
+        <div class="anon__route">
+          <span class="anon__node"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="5" width="16" height="10" rx="3"/></svg>Box</span>
+          <span class="anon__wire"><span></span></span>
+          <span class="anon__node anon__node--cloud"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15h10a3.5 3.5 0 0 0 .3-7 5 5 0 0 0-9.6-1A4 4 0 0 0 5 15z"/></svg>Deutsche Cloud</span>
+        </div>
+        <button class="anon__replay" type="button" id="anon-replay">Nochmal abspielen</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Zielgruppen ============ -->
+<section class="section section--alt" id="zielgruppen">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>Für wen</p>
+      <h2 data-reveal>Gemacht für Berufe mit Schweigepflicht.</h2>
+    </div>
+    <div class="cards cards--3" data-reveal-group>
+      <article class="card card--audience" data-reveal>
+        <span class="card__kicker">Arzt- &amp; Psychotherapiepraxen</span>
+        <h3>Gesundheitsdaten bleiben in der Praxis.</h3>
+        <p>Gesundheitsdaten sind nach DSGVO besonders geschützt, dazu kommen § 203 StGB und § 393 SGB V: Cloud-Dienste brauchen dort ein C5-Testat. Eine Box in Ihren Räumen ist kein Cloud-Dienst.</p>
+      </article>
+      <article class="card card--audience" data-reveal>
+        <span class="card__kicker">Steuerberater, Anwälte, Notare</span>
+        <h3>Mandantengeheimnis ohne Kompromisse.</h3>
+        <p>§ 203 StGB und Ihr Berufsrecht verlangen Verschwiegenheit. Mit LokalKI bleibt die Mandantenakte, wo sie hingehört – und DATEV ist direkt angebunden.</p>
+      </article>
+      <article class="card card--audience" data-reveal>
+        <span class="card__kicker">Kleine Unternehmen</span>
+        <h3>Vertrauen als Argument.</h3>
+        <p>Personalakten, Verträge, Kundendaten: Auch ohne Berufsgeheimnis ist „Ihre Daten bleiben bei uns“ ein Versprechen, das Ihre Kunden schätzen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. Preise ============ -->
+<section class="section" id="preise">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <p class="eyebrow" data-reveal>Pakete &amp; Preise</p>
+      <h2 data-reveal>Ein Festpreis. Alles drin.</h2>
+      <p class="lead" data-reveal>Gerät, Einrichtung, Updates und Support in einem monatlichen Betrag. Unbegrenzte Nutzung, keine Abrechnung pro Anfrage.</p>
+    </div>
+
+    <div class="pricing" data-reveal-group>
+      <article class="plan" data-reveal>
+        <header>
+          <h3>Basic</h3>
+          <p class="plan__for">Kleine Praxis · 1–3 Nutzer</p>
+        </header>
+        <p class="plan__price"><span class="plan__amount">249&nbsp;€</span><span class="plan__per">/ Monat</span></p>
+        <p class="plan__setup">einmalig 290&nbsp;€ Einrichtung</p>
+        <ul class="plan__features">
+          <li>Mac mini mit 64&nbsp;GB Arbeitsspeicher</li>
+          <li>Modell-Updates 2× pro Jahr</li>
+          <li class="is-off">Gerätetausch nach 3 Jahren</li>
+          <li class="is-off">Hybrid-Cloud-Option</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block" data-plan="Basic">Basic anfragen</a>
+      </article>
+
+      <article class="plan plan--featured" data-reveal>
+        <span class="plan__badge">Für die meisten Praxen</span>
+        <header>
+          <h3>Komplett</h3>
+          <p class="plan__for">Praxis oder Kanzlei · ca. 5–8 Nutzer</p>
+        </header>
+        <p class="plan__price"><span class="plan__amount">449&nbsp;€</span><span class="plan__per">/ Monat</span></p>
+        <p class="plan__setup">einmalig 490&nbsp;€ Einrichtung</p>
+        <ul class="plan__features">
+          <li>Mini-PC mit 128&nbsp;GB Arbeitsspeicher</li>
+          <li>Modell-Updates vierteljährlich</li>
+          <li>Gerätetausch alle 3 Jahre inklusive</li>
+          <li>Hybrid-Cloud-Option inklusive</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--primary btn--block" data-plan="Komplett">Komplett anfragen</a>
+      </article>
+
+      <article class="plan" data-reveal>
+        <header>
+          <h3>Pro</h3>
+          <p class="plan__for">Größere Kanzlei oder Praxis · 15+ Nutzer</p>
+        </header>
+        <p class="plan__price"><span class="plan__amount">1.490&nbsp;€</span><span class="plan__per">/ Monat</span></p>
+        <p class="plan__setup">einmalig 990&nbsp;€ Einrichtung</p>
+        <ul class="plan__features">
+          <li>Workstation mit Nvidia RTX PRO 6000</li>
+          <li>Vierteljährliche Updates + angepasste Modelle</li>
+          <li>Offline-Updates vor Ort</li>
+          <li>Gerätetausch alle 3 Jahre</li>
+          <li>Hybrid-Cloud-Option inklusive</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block" data-plan="Pro">Pro anfragen</a>
+      </article>
+    </div>
+    <p class="pricing__note" data-reveal>Alle Preise netto pro Monat zzgl. USt. Wechsel ins nächste Paket jederzeit möglich.</p>
+
+    <div class="included" data-reveal>
+      <div class="included__copy">
+        <h3>In jedem Abo enthalten</h3>
+        <ul class="included__list">
+          <li>Gerät und Installation vor Ort</li>
+          <li>Anbindung an E-Mail, Praxissoftware, KIM oder DATEV</li>
+          <li>Laufende Modell-Updates, vorher von uns getestet</li>
+          <li>Support und Fernwartung</li>
+          <li>Rechtssichere Vertragsunterlagen: Verschwiegenheitsverpflichtung nach § 203 StGB und Vertrag zur Auftragsverarbeitung</li>
+        </ul>
+      </div>
+      <div class="included__eco">
+        <svg viewBox="0 0 120 120" class="eco-svg" aria-hidden="true">
+          <circle class="eco-ring" cx="60" cy="60" r="44"/>
+          <g class="eco-spin">
+            <path class="eco-arrow" d="M60 16a44 44 0 0 1 38 22"/>
+            <path class="eco-arrowhead" d="M92 30l6 8-10 1"/>
+            <path class="eco-arrow" d="M98 82a44 44 0 0 1-76 0"/>
+            <path class="eco-arrowhead" d="M28 90l-6-8 10-1"/>
+          </g>
+          <rect class="eco-box" x="42" y="48" width="36" height="24" rx="6"/>
+          <circle class="hs-led" cx="71" cy="65" r="2.5"/>
+        </svg>
+        <div>
+          <h4>Kein Gerät landet nach 3 Jahren im Müll.</h4>
+          <p>Zurückgenommene Geräte arbeiten im kleineren Paket weiter oder werden generalüberholt verkauft.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. Sicherheit & Recht ============ -->
+<section class="section section--alt" id="sicherheit">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>Sicherheit &amp; Recht</p>
+      <h2 data-reveal>Der einfachste rechtssichere Weg zur KI.</h2>
+      <p class="lead" data-reveal>Cloud-KI ist unter Auflagen erlaubt. Doch je weniger Daten Ihr Haus verlassen, desto weniger müssen Sie prüfen, vertraglich absichern und erklären.</p>
+    </div>
+
+    <div class="legal" data-reveal-group>
+      <div class="legal__item" data-reveal>
+        <span class="legal__para">§ 203 StGB</span>
+        <p>Wir unterzeichnen eine Verschwiegenheitsverpflichtung – so dürfen wir als Dienstleister für Berufsgeheimnisträger tätig werden.</p>
+      </div>
+      <div class="legal__item" data-reveal>
+        <span class="legal__para">DSGVO</span>
+        <p>Vertrag zur Auftragsverarbeitung inklusive. Die Verarbeitung findet auf Ihrem eigenen Gerät statt.</p>
+      </div>
+      <div class="legal__item" data-reveal>
+        <span class="legal__para">§ 393 SGB V</span>
+        <p>Cloud-Dienste für Gesundheitsdaten brauchen ein C5-Testat. Eine Box in Ihren Räumen ist kein Cloud-Dienst.</p>
+      </div>
+      <div class="legal__item" data-reveal>
+        <span class="legal__para">Nachprüfbar</span>
+        <p>Jede Zusammenfassung verweist auf das Originaldokument. Die Box organisiert – Entscheidungen treffen immer Sie.</p>
+      </div>
+    </div>
+
+    <!-- Vergleich -->
+    <div class="compare-wrap" data-reveal>
+      <table class="compare">
+        <caption>LokalKI im Vergleich</caption>
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">Kriterium</span></th>
+            <th scope="col" class="compare__us">LokalKI</th>
+            <th scope="col">Cloud-KI mit EU-Rechenzentrum</th>
+            <th scope="col">KI-Schnittstelle (API)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Daten bleiben im Haus</th>
+            <td class="compare__us"><span class="yes">Ja</span></td>
+            <td><span class="no">Nein</span></td>
+            <td><span class="no">Nein</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Funktioniert offline</th>
+            <td class="compare__us"><span class="yes">Ja</span></td>
+            <td><span class="no">Nein</span></td>
+            <td><span class="no">Nein</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Preismodell</th>
+            <td class="compare__us">Festpreis, unbegrenzt</td>
+            <td>pro Nutzer</td>
+            <td>pro Anfrage</td>
+          </tr>
+          <tr>
+            <th scope="row">Fertig eingerichtet, mit Oberfläche</th>
+            <td class="compare__us"><span class="yes">Ja</span></td>
+            <td><span class="part">teilweise</span></td>
+            <td><span class="no">Nein</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Fester Ansprechpartner vor Ort</th>
+            <td class="compare__us"><span class="yes">Ja</span></td>
+            <td><span class="no">Nein</span></td>
+            <td><span class="no">Nein</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Leistung bei sehr schwierigen Aufgaben</th>
+            <td class="compare__us">gut – Hybrid für Schwieriges</td>
+            <td>sehr hoch</td>
+            <td>sehr hoch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. Gründer ============ -->
+<section class="section" id="gruender">
+  <div class="container founder">
+    <div class="founder__visual" data-reveal="scale">
+      <div class="founder__portrait" aria-hidden="true">
+        <span>F</span>
+      </div>
+      <div class="founder__id">
+        <strong>Florian</strong>
+        <span>Gründer &amp; Geschäftsführer<br>Technik und Produkt</span>
+      </div>
+    </div>
+    <div class="founder__copy">
+      <p class="eyebrow" data-reveal>Über den Gründer</p>
+      <blockquote data-reveal>
+        „Ärzte und Steuerberater wollten KI nutzen – und durften es mit ihren Daten nicht. Also habe ich gebaut, was ich mir als ihr IT-Dienstleister selbst gewünscht hätte.“
+      </blockquote>
+      <p data-reveal>Aus dieser Frage entstand ein erster Prototyp in einer Hausarztpraxis – und daraus LokalKI.</p>
+      <ul class="founder__facts" data-reveal-group>
+        <li data-reveal>IHK-Fachinformatiker für Systemintegration und B.Sc. Informatik (TH Deggendorf)</li>
+        <li data-reveal>Ausbildung und Werkstudium in einem IT-Systemhaus für Praxen und Kanzleien</li>
+        <li data-reveal>Mitgründer und CTO von SensoraWild</li>
+        <li data-reveal>Eigene Projekte mit lokalen Sprachmodellen, u.&nbsp;a. ein KI-Assistent, der Anfragen auf lokale und Cloud-Modelle verteilt</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FAQ ============ -->
+<section class="section section--alt" id="faq">
+  <div class="container faq-grid">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>FAQ</p>
+      <h2 data-reveal>Ehrliche Antworten.</h2>
+      <p class="lead" data-reveal>Was die Box kann – und was nicht.</p>
+    </div>
+
+    <div class="faq" data-reveal-group>
+      <details data-reveal>
+        <summary>Ist eine lokale KI so gut wie ChatGPT?</summary>
+        <div><p>Nicht ganz. Lokale Modelle erreichen etwa das Niveau der Spitzen-KI von vor 6–12 Monaten. Das reicht für rund 90&nbsp;% der Büroarbeit: sortieren, zusammenfassen, entwerfen. Für schwierige Fragen gibt es die Hybrid-Option mit vorheriger Anonymisierung.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Stellt die Box Diagnosen?</summary>
+        <div><p>Nein. Die Box organisiert, sie diagnostiziert nicht. Sie sortiert Befunde, fasst Arztbriefe zusammen und weist auf Dokumente hin. Medizinische Entscheidungen trifft immer die Ärztin oder der Arzt.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Ist lokale KI für Praxen und Kanzleien gesetzlich vorgeschrieben?</summary>
+        <div><p>Nein. Cloud-KI ist unter bestimmten Auflagen erlaubt. Lokal ist aber der einfachste rechtssichere Weg: keine Vertragskette mit Cloud-Anbietern, keine Prüfung von Testaten, keine Diskussion über Zugriffe aus dem Ausland.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Ist LokalKI günstiger als Cloud-KI?</summary>
+        <div><p>Nicht unbedingt – reine Cloud-Rechenleistung ist heute sehr günstig. Unser Vorteil liegt woanders: Rechtssicherheit, ein fester Preis ohne Überraschungen und ein Service, bei dem Sie sich um nichts kümmern müssen.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Wie schnell ist die Box?</summary>
+        <div><p>Kurze Anfragen beantwortet sie in Sekunden. Lange Dokumente einzulesen dauert einige Sekunden; große Mengen – etwa ein ganzes Aktenarchiv – verarbeitet die Box über Nacht im Hintergrund.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Gehen bei der Hybrid-Option doch Daten in die Cloud?</summary>
+        <div><p>Nur anonymisierte Anfragen. Die Box entfernt vorher Namen, Adressen, Kennnummern und Daten. Die Cloud steht in Deutschland, die Option ist abschaltbar und im Paket Basic gar nicht enthalten.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Was passiert, wenn das Internet ausfällt?</summary>
+        <div><p>Die Box arbeitet weiter. Alle Kernfunktionen laufen offline, nur die optionale Hybrid-Cloud ist dann nicht erreichbar.</p></div>
+      </details>
+      <details data-reveal>
+        <summary>Brauche ich eigene IT-Kenntnisse?</summary>
+        <div><p>Nein. Wir installieren die Box vor Ort, binden Ihre Programme an, spielen getestete Updates ein und sind Ihr fester Ansprechpartner bei Fragen.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. Kontakt ============ -->
+<section class="section section--contact" id="kontakt">
+  <div class="container contact">
+    <div class="contact__copy">
+      <p class="eyebrow" data-reveal>Demo-Termin</p>
+      <h2 data-reveal>Sehen Sie die Box in Aktion.</h2>
+      <p class="lead" data-reveal>In 30 Minuten zeigen wir Ihnen an Beispielen aus Ihrem Alltag, was die Box übernehmen kann – in Ihrer Praxis, Ihrer Kanzlei oder online.</p>
+      <ul class="contact__points" data-reveal-group>
+        <li data-reveal>Unverbindlich und kostenlos</li>
+        <li data-reveal>Mit echten Beispielen aus Ihrer Branche</li>
+        <li data-reveal>Empfehlung für das passende Paket</li>
+      </ul>
+    </div>
+
+    <form class="form" id="demo-form" novalidate data-reveal>
+      <div class="form__row">
+        <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+        <label><span>Praxis / Kanzlei</span><input type="text" name="org" autocomplete="organization"></label>
+      </div>
+      <div class="form__row">
+        <label><span>E-Mail</span><input type="email" name="email" autocomplete="email" required></label>
+        <label><span>Telefon <span class="opt">(optional)</span></span><input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <div class="form__row">
+        <label><span>Branche</span>
+          <select name="branche">
+            <option>Arztpraxis</option>
+            <option>Psychotherapie</option>
+            <option>Steuerberatung</option>
+            <option>Rechtsanwalt / Notar</option>
+            <option>Anderes Unternehmen</option>
+          </select>
+        </label>
+        <label><span>Interesse an</span>
+          <select name="paket" id="paket">
+            <option value="">Noch offen</option>
+            <option>Basic</option>
+            <option>Komplett</option>
+            <option>Pro</option>
+          </select>
+        </label>
+      </div>
+      <label><span>Nachricht <span class="opt">(optional)</span></span><textarea name="msg" rows="4" placeholder="Was soll Ihnen die Box abnehmen?"></textarea></label>
+      <button type="submit" class="btn btn--primary btn--block">Demo anfragen</button>
+      <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="logo logo--small" aria-label="LokalKI – nach oben">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="7" width="26" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <line x1="8" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="8" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle class="logo__led" cx="23" cy="18" r="2.4"/>
+      </svg>
+      <span>LokalKI</span>
+    </a>
+    <p class="footer__claim">Ihre KI. In Ihrem Haus.</p>
+    <nav class="footer__links" aria-label="Fußzeile">
+      <a href="#loesung">Lösung</a>
+      <a href="#preise">Preise</a>
+      <a href="#sicherheit">Sicherheit</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <p class="footer__copy">© <span id="year">2026</span> LokalKI</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
